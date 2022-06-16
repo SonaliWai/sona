@@ -1,0 +1,25 @@
+﻿@model Department
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 class="bg-dark text-warning">Create Department</h1>
+<div class="container">
+    <form method="post" asp-controller="Department" asp-action="CreateDepartment" class="bg-warning">
+        <div class="row">
+            <div class="form-control">
+                <label>Department-Name</label>
+                <input type="text" asp-for="Name" />
+            </div>
+            <div class="form-control">
+                <label>Location Ref Id</label>
+                <input type="text" asp-for="LocationRefId" />
+            </div>
+            <div class="form-control">
+                <input type="submit" values="Submit" />
+                <input type="reset" values="Cancel" />
+            </div>
+</div>
+  </form>
+</div>
